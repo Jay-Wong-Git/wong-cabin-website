@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import CabinList from "@/app/_components/CabinList";
 import Filter from "@/app/_components/Filter";
 import Spinner from "@/app/_components/Spinner";
+import ReservationReminder from "../_components/ReservationReminder";
 
 // export const revalidate = 0;
 export const revalidate = 3600;
@@ -37,13 +38,12 @@ export default function Page({ searchParams }) {
         fallback={
           <div className="grid items-center justify-center">
             <Spinner />
-            <div className="text-xl text-primary-200">
-              Loading cabin data...
-            </div>
+            <div className="text-xl text-primary-200">Loading...</div>
           </div>
         }
       >
         <CabinList filter={filter} />
+        <ReservationReminder />
       </Suspense>
     </div>
   );

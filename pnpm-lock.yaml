@@ -16,6 +16,9 @@ dependencies:
   react:
     specifier: ^18
     version: registry.npmmirror.com/react@18.3.1
+  react-day-picker:
+    specifier: ^8.10.1
+    version: registry.npmmirror.com/react-day-picker@8.10.1(date-fns@3.6.0)(react@18.3.1)
   react-dom:
     specifier: ^18
     version: registry.npmmirror.com/react-dom@18.3.1(react@18.3.1)
@@ -2884,6 +2887,19 @@ packages:
     name: queue-microtask
     version: 1.2.3
     dev: true
+
+  registry.npmmirror.com/react-day-picker@8.10.1(date-fns@3.6.0)(react@18.3.1):
+    resolution: {integrity: sha512-TMx7fNbhLk15eqcMt+7Z7S2KF7mfTId/XJDjKE8f+IUcFn0l08/kI4FiYTL/0yuOLmEcbR4Fwe3GJf/NiiMnPA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-day-picker/-/react-day-picker-8.10.1.tgz}
+    id: registry.npmmirror.com/react-day-picker/8.10.1
+    name: react-day-picker
+    version: 8.10.1
+    peerDependencies:
+      date-fns: ^2.28.0 || ^3.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      date-fns: registry.npmmirror.com/date-fns@3.6.0
+      react: registry.npmmirror.com/react@18.3.1
+    dev: false
 
   registry.npmmirror.com/react-dom@18.3.1(react@18.3.1):
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-dom/-/react-dom-18.3.1.tgz}
