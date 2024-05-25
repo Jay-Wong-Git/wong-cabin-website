@@ -17,7 +17,7 @@ const navLinks = [
     icon: (
       <HomeIcon
         fill="none"
-        strokeWidth={1.5}
+        strokeWidth={1.2}
         stroke="currentColor"
         className="h-5 w-5 text-primary-600"
       />
@@ -29,7 +29,7 @@ const navLinks = [
     icon: (
       <CalendarDaysIcon
         fill="none"
-        strokeWidth={1.5}
+        strokeWidth={1.2}
         stroke="currentColor"
         className="h-5 w-5 text-primary-600"
       />
@@ -41,7 +41,7 @@ const navLinks = [
     icon: (
       <UserIcon
         fill="none"
-        strokeWidth={1.5}
+        strokeWidth={1.2}
         stroke="currentColor"
         className="h-5 w-5 text-primary-600"
       />
