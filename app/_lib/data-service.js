@@ -1,6 +1,8 @@
-import { supabase } from "@/app/_lib/supabase";
 import { eachDayOfInterval } from "date-fns";
+import { revalidatePath } from "next/cache";
 import { notFound } from "next/navigation";
+
+import { supabase } from "@/app/_lib/supabase";
 
 /////
 // GET
@@ -212,15 +214,14 @@ export async function updateGuest(id, updatedFields) {
   const { data, error } = await supabase
     .from("guests")
     .update(updatedFields)
-    .eq("id", id)
-    .select()
-    .single();
+    .eq("id", id);
 
   if (error) {
     console.error(error);
     throw new Error("Guest could not be updated");
   }
-  return data;
+
+  revalidatePath("/account/profile");
 }
 
 export async function updateBooking(id, updatedFields) {
